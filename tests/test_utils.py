@@ -70,4 +70,3 @@ def test_top_transactions_by_payment_amount_ok_and_wrong(
 ) -> None:
     """Тестирование затраты по карточке в указанный период"""
     assert top_transactions_by_payment_amount(fixture_transaction, start, finish) == result
-    
