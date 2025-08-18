@@ -45,4 +45,3 @@ def test_get_stock_prices_wrong(mock_get: Any, mock_find_value: Any) -> None:
     mock_find_value.return_value = None
     mock_get.return_value.json.return_value = {"5. open": 213.60}
     assert get_stock_prices(["MSFT"]) == [{}]
-    

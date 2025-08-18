@@ -40,4 +40,3 @@ from src.services import main_services_function
 def test_main_services_function_found(transactions: list[dict], search_str: str, result: list[dict]) -> None:
     func_result = main_services_function(transactions, search_str)
     assert func_result == json.dumps(result, ensure_ascii=False)
-    

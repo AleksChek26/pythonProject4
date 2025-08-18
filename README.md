@@ -12,7 +12,8 @@
 ## Установка:
   1. Клонируйте репозиторий:
 
-  
+    https://github.com/AleksChek26/pythonProject4
+
   2. Установите зависимости:
 
     poetry install
