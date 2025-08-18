@@ -27,4 +27,3 @@ def main_services_function(transactions: list[dict], search_str: str) -> str:
     else:
         logger.error("По указанным параметрам нет возвращаемых данных")
         return "[{}]"
-    

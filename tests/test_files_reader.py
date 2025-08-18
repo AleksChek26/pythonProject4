@@ -52,4 +52,3 @@ def test_get_transaction_from_excel_file_success(mock_read_excel: Any) -> None:
 def test_get_transaction_from_excel_file_file_not_found(mock_read_excel: Any) -> None:
     result = get_transaction_from_excel_file("dummy_path.xlsx")
     assert result == [{}]
-    
