@@ -1,0 +1,50 @@
+[project]
+name = "pythonproject4"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Aleksandr",email = "check1984@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas (>=2.3.1,<3.0.0)",
+    "requests (>=2.32.4,<3.0.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "pytest (>=8.4.1,<9.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+requests = "^2.32.4"
+
+
+[tool.poetry.group.lint.dependencies]
+flake8 = "^7.3.0"
+mypy = "^1.17.1"
+black = "^25.1.0"
+isort = "^6.0.1"
+pytest-cov = "^6.2.1"
+
+[tool.black]
+line-length = 119
+exclude = '''
+(
+  /(
+      /.git
+  )/
+ )
+ '''
+
+[tool.isort]
+# максимальная длина строки
+line_length = 119
+
+[tool.mypy]
+disallow_untyped_defs = true
+warn_return_any = true
+exclude = 'venv'
