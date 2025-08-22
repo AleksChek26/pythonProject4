@@ -6,6 +6,7 @@ import pytest
 from src.external_api import find_value, get_exchange_curse_currency, get_stock_prices
 
 
+
 @pytest.mark.parametrize("search_key, result", [("e", 213.60), ("r", None)])
 def test_find_value_ok(fixture_dict: dict, search_key: str, result: float) -> None:
     """Тестирование поиска значения по ключу"""

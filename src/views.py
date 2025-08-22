@@ -7,6 +7,7 @@ from src.external_api import get_exchange_curse_currency, get_stock_prices
 from src.files_reader import get_transaction_from_excel_file, read_json_file
 from src.utils import get_greeting, top_transactions_by_payment_amount, total_expenses_on_card
 
+"""Настраиваем логирование"""
 logger = logging.getLogger("views")
 file_handler = logging.FileHandler("C:/Users/Admin/PycharmProjects/Coursework_01/logs/views.log", encoding="UTF-8")
 file_formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s: %(message)s")

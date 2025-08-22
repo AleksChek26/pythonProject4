@@ -4,6 +4,7 @@ from typing import Any, Callable, Optional
 
 import pandas as pd
 
+"""Настраиваем логирование"""
 logger = logging.getLogger("reports")
 file_handler = logging.FileHandler("C:/Users/Admin/PycharmProjects/Coursework_01/logs/reports.log", encoding="UTF-8")
 file_formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s: %(message)s")
@@ -27,7 +28,7 @@ def report_decorator(file_name: str = "report.txt") -> Callable:
 
     return decorator
 
-
+"""Функция возвращает траты по заданной категории за последние три месяца (от переданной даты)."""
 @report_decorator()
 def spending_by_category(transactions_dfr: pd.DataFrame, category: str, date: Optional[str] = None) -> pd.DataFrame:
     formated_date = datetime.strptime(str(date), "%Y-%m-%d %H:%M:%S")
