@@ -7,6 +7,7 @@ from src.reports import spending_by_category
 from src.services import main_services_function
 from src.views import main_view_function
 
+"""Функция исполняющая основную логику программы"""
 if __name__ == "__main__":
     transactions = get_transaction_from_excel_file(os.path.join(os.path.dirname(__file__), "data", "operations.xlsx"))
     filtering_transactions = [

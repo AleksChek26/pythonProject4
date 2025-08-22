@@ -7,6 +7,7 @@ import pytest
 from src.utils import get_greeting, top_transactions_by_payment_amount, total_expenses_on_card
 
 
+
 @patch("src.utils.datetime")
 def test_get_greetings(mock_datetime: Any) -> None:
     mock_datetime.now.return_value.hour = 7
