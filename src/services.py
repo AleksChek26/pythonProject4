@@ -2,6 +2,7 @@ import json
 import logging
 import re
 
+"""Настраиваем логирование"""
 logger = logging.getLogger("services")
 file_handler = logging.FileHandler("C:/Users/Admin/PycharmProjects/Coursework_01/logs/services.log", encoding="UTF-8")
 file_formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s: %(message)s")

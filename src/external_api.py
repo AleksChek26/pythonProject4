@@ -5,6 +5,7 @@ from typing import Any
 import requests
 from dotenv import load_dotenv
 
+"""Настройка логера"""
 logger = logging.getLogger("external_api")
 file_handler = logging.FileHandler(
     "C:/Users/Admin/PycharmProjects/Coursework_01/logs/external_api.log", encoding="UTF-8"

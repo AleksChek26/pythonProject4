@@ -4,6 +4,7 @@ from typing import Any
 
 import pandas as pd
 
+"""Настраиваем логирование"""
 logger = logging.getLogger("files_reader")
 file_handler = logging.FileHandler(
     "C:/Users/Admin/PycharmProjects/Coursework_01/logs/files_reader.log", encoding="UTF-8"

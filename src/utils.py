@@ -1,6 +1,7 @@
 import logging
 from datetime import datetime
 
+"""Настраиваем логирование"""
 logger = logging.getLogger("utils")
 file_handler = logging.FileHandler("C:/Users/Admin/PycharmProjects/Coursework_01/logs/utils.log", encoding="UTF-8")
 file_formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s: %(message)s")
